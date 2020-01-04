@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Resistance Conversor</string>
+    <string name="app_name">RConvert</string>
     <string name="valor_numerico">Valor numerico</string>
     <string name="calculate">Calcular</string>
     <string name="borrar">Borrar</string>

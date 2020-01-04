@@ -53,14 +53,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <EditText
-                    android:id="@+id/valuesNumber"
-                    android:layout_width="169dp"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="60dp"
-                    android:layout_marginRight="5dp"
-                    android:textColor="@color/colorPrimary"
-                    android:hint="@string/valor_numerico" />
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/valuesNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:textColor="@color/colorPrimary"
+                        android:hint="@string/valor_numerico" />
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/simbolo_homios" />
+                </LinearLayout>
 
                 <NumberPicker
                     android:id="@+id/firstBand"

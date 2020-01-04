@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var recistanceValue : String
         val firstBand : NumberPicker = findViewById(R.id.firstBand)
         val secondBand : NumberPicker = findViewById(R.id.secondBancd)
         val thirdBand : NumberPicker = findViewById(R.id.thirdBand)
@@ -55,8 +54,7 @@ class MainActivity : AppCompatActivity() {
             secondBand.value=0
             thirdBand.value=0
         }
-        firstBand.setOnValueChangedListener { _, _, newVal ->
-
+        firstBand.setOnValueChangedListener {_,_,newVal ->
             // Display the picker selected value to text view
             if(thirdBand.value==0){
                 valuesNumber.setText(firstBand.value.toString() + secondBand.value.toString())
